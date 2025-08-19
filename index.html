@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>UniTrajectory: Unifed Trajectory-guided Video Generation</title>
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">UniTrajectory: Unifed Trajectory-guided Video Generation</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <strong>Yuan Liu<sup>1</sup>,</strong>
+              </span>
+              <span class="author-block">
+                Chenjie Yang<sup>2</sup>,
+              </span>
+              <span class="author-block">
+                Yansong Liu<sup>3</sup>,
+              </span>
+              <span class="author-block">
+                Xintao Hu<sup>4</sup>,
+              </span>
+              <span class="author-block">
+                Jack Ma<sup>5</sup>
+              </span>
+            </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>CUHK,</span>
+                    <span class="author-block"><sup>2</sup>Xi'an Jiaotong University,</span>
+                    <span class="author-block"><sup>3</sup>Xi'an Jiaotong-Liverpool University,</span>
+                    <span class="author-block"><sup>4</sup>NJUPT,</span>
+                    <span class="author-block"><sup>5</sup>HKUST</span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Highlights</h2>
+      <div class="content has-text-justified">
+        <ul>
+          <li>
+            <b>Unified Trajectory Control:</b> A single framework for I2V and V2V generation with compositional camera and object motion control.
+          </li>
+          <li>
+            <b>Versatile Guidance:</b> Supports diverse control signals, including dynamic point clouds, user-drawn paths, and mask-based motions.
+          </li>
+          <li>
+            <b>Efficient by Design:</b> Employs a lightweight LoRA-based fine-tuning strategy on a DiT model, avoiding heavy computational overhead.
+          </li>
+          <li>
+            <b>Advanced Capabilities:</b> Empowers users with dynamic camera manipulation, precise object path guidance, and direct motion transfer.
+          </li>
+          <li>
+            <b>High-Fidelity Output:</b> Delivers high-quality videos with accurate and natural dynamics, even in complex scenarios.
+          </li>
+        </ul>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <video autoplay controls muted loop src="static/videos/Multimedia Appendix.mp4" style="width: 100%;"></video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The dynamism of videos is their core appeal, and motion control serves as a pivotal enabler for dynamic creation and creative expression. However, existing text-to-video (T2V) and image-to-video (I2V) video generation models lack a unified motion control framework, failing to characterize precise camera movements and subtle object dynamics, while current trajectory control methods suffer from insufficient motion control granularity and are often plagued by visual distortion or trajectory deviation. To address these challenges, we propose UniTrajectory, a unified trajectory-guided video generation framework supporting I2V and video-to-video (V2V) generation with independent or compositional camera and object motion control. It integrates a user-friendly data pipeline for versatile control signal creation: camera signals from dynamic point clouds and adjustable paths, object signals from user-drawn trajectories or mask-based predefined motions. The method uses an effective training strategy: first, concatenating conditioning signal latent with input video latent and fine-tuning a pre-trained Diffusion Transformers (DiT)-based model via LoRA to avoid extra modules and heavy computational overhead; second, employing mask-based, density-aware point sampling during training to support sparse-to-dense control signals at inference. Ultimately, our framework empowers users with capabilities including dynamic camera control, object path guidance, and motion transfer. Comprehensive experiments validate that it generates high-quality videos with improved accuracy and adaptability in complex motion control, delivering precise and natural dynamic effects.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Video results -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">I2V Camera</h2>
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <p>This module is engineered to synthesize video sequences from a single static image. Its core functionality lies in the simulation of intricate virtual camera trajectories, thereby imbuing static scenes with dynamic vitality.</p>
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <p>Input Video</p>
+            </div>
+            <div class="column has-text-centered">
+              <p>User Input</p>
+            </div>
+            <div class="column has-text-centered">
+              <p>Output Video</p>
+            </div>
+          </div>
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <video autoplay controls muted loop src="static/videos/I2V Camera/dolly_zoom/input.mp4"></video>
+            </div>
+            <div class="column has-text-centered">
+              <video autoplay controls muted loop src="static/videos/I2V Camera/dolly_zoom/trace_on_input.mp4"></video>
+            </div>
+            <div class="column has-text-centered">
+              <video autoplay controls muted loop src="static/videos/I2V Camera/dolly_zoom/wan_output.mp4"></video>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="title is-3">I2V Object</h2>
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <p>In contrast to the I2V Camera module, the primary objective here is not the global manipulation of the camera's viewpoint, but rather the animation of specific objects or regions within the image, effectively bringing them to life.</p>
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <p>Input Image</p>
+            </div>
+            <div class="column has-text-centered">
+              <p>User Input</p>
+            </div>
+            <div class="column has-text-centered">
+              <p>Output Video</p>
+            </div>
+          </div>
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <img src="static/videos/I2V Object/JH_2023-09-14-1821-58_04/first_frame.png"/>
+            </div>
+            <div class="column has-text-centered">
+              <img src="static/videos/I2V Object/JH_2023-09-14-1821-58_04/user_input.png"/>
+            </div>
+            <div class="column has-text-centered">
+              <video autoplay controls muted loop src="static/videos/I2V Object/JH_2023-09-14-1821-58_04/wan_output 1821-58_04 pick.mp4"></video>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="title is-3">V2V Camera</h2>
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <p>This module processes an existing video input, applying novel camera movements that were not present in the original capture. This process is analogous to a form of "re-cinematography," allowing for the dynamic alteration of the video's perspective.</p>
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <p>Input Video</p>
+            </div>
+            <div class="column has-text-centered">
+              <p>User Input</p>
+            </div>
+            <div class="column has-text-centered">
+              <p>Output Video</p>
+            </div>
+          </div>
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <video autoplay controls muted loop src="static/videos/V2V Camera/vp5001614_orbit_down/input.mp4"></video>
+            </div>
+            <div class="column has-text-centered">
+              <video autoplay controls muted loop src="static/videos/V2V Camera/vp5001614_orbit_down/vp5001614_orbit_down_track_rainbow_grid25x25.mp4"></video>
+            </div>
+            <div class="column has-text-centered">
+              <video autoplay controls muted loop src="static/videos/V2V Camera/vp5001614_orbit_down/vp5001614_orbit_down_track_rainbow_grid25x25_wan_v2v_output.mp4"></video>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="title is-3">Motion Transfer</h2>
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <p>This section showcases a sophisticated AI capability, involving the extraction of a subject's motion from a source video (e.g., the gait of a canine) and its subsequent application to a disparate subject, thereby generating a novel video sequence (e.g., a running feline).</p>
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <p>Input Video</p>
+            </div>
+            <div class="column has-text-centered">
+              <p>User Input</p>
+            </div>
+            <div class="column has-text-centered">
+              <p>Output Video</p>
+            </div>
+          </div>
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <video autoplay controls muted loop src="static/videos/Motion Transfer/dog.mp4"></video>
+            </div>
+            <div class="column has-text-centered">
+              <video autoplay controls muted loop src="static/videos/Motion Transfer/dog.mp4"></video>
+            </div>
+            <div class="column has-text-centered">
+              <video autoplay controls muted loop src="static/videos/Motion Transfer/tiger1.wan_output.mp4"></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video results -->
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
